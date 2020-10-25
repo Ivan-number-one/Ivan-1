@@ -63,7 +63,7 @@ int decision(double a, double b, double c, double* x1, double* x2)
      double discr = (b)*(b) - 4*(a)*(c);
      if ((fabs(a) < EPSILON) && (fabs(b) > EPSILON))
          {
-          *x1 = -c/(b);
+          *x1 = -c/(b) + 0;
            return 1;// 1 root and a = 0
          }
 
